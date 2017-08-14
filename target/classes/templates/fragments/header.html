@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" />
+    <link rel="stylesheet" type="text/css" href="../static/css/mdb.css" th:href="@{/css/mdb.css}" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" href="../static/font/css/font-awesome.css" th:href="@{/css/font-awesome.css}" />
+
+    <script th.src="@{/js/jquery-3.1.1.min.js}"></script>
+    <script th.src="@{/js/mdb.js}"></script>
+    <script th.src="@{/js/popper.min.js}"></script>
+    <script th.src="@{/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div th:fragment="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" th:href="@{/products}">Products</a></li>
+                            <li><a href="#" th:href="@{/product/new}">Create Product</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

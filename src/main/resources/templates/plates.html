@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+
+    <title>Spring Framework</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+        <div class="row col-md-12">
+            <div th:each="plate : ${plates}" class="col-md-4">
+                <!--Section: Live preview-->
+                <section>
+                    <!--Card-->
+                    <div class="card mb-r" style="margin-top: 52px">
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight plate my-auto mx-auto">
+                            <span class="plate-numbers" th:text="${plate.number}"></span>
+                            <span class="plate-letters" th:text="${plate.text}"></span>
+                            <a>
+                                <div class="mask waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <h5 class="card-date" th:text="${#dates.format(plate.date, 'yyyy-MM-dd')}"></h5>
+                            <!--Address-->
+                            <h4 class="card-address" th:text="${plate.address}"></h4>
+                            <!--Description-->
+                            <p class="card-description" th:text="${plate.description}"></p>
+                            <a class="btn btn-unique waves-effect waves-light">Харах</a>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                    <!--/.Card-->
+                </section>
+                <!--Section: Live preview-->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!--Footer-->
+<footer class="page-footer blue center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title">Сайтын зориулалт</h5>
+                <p>Уг сайтыг ашигийн бус зориулалтаар бүтээв.</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <h5 class="title">Хэрэгтэй холбоосууд</h5>
+                <ul>
+                    <li><a href="#!">Замын цагдаагийн ерөнхий газар</a></li>
+                    <li><a href="#!">Улаанбаатар хот</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="https://esaintor-2017.appspot.com"> esaintor </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+</html>
