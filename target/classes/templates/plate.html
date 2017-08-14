@@ -17,9 +17,10 @@
             <form class="form-horizontal">
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Number:</label>
-                    <div class="col-sm-10">
-                        <p class="form-control-static plate-numbers" th:text="${plate.numbers}"></p>
-                        <p class="form-control-static plate-letters" th:text="${plate.letters}"></p>
+                    <div class="row col-sm-10">
+                        <p class="form-control text-numbers" th:text="${plate.numbers}"></p>
+                        <p class="plate-separate">-</p>
+                        <p class="form-control text-letters" th:text="${plate.letters}"></p>
                     </div>
                 </div>
                 <div class="form-group">
