@@ -22,14 +22,14 @@ public class PlateController {
     @RequestMapping(value = "/plates", method = RequestMethod.GET)
     public String list(Model model){
         model.addAttribute("plates", plateService.listAllPlates());
-        System.out.println("Returning rpoducts:");
+        System.out.println("Returning plates:");
         return "plates";
     }
 
     @RequestMapping("plate/{id}")
     public String showPlate(@PathVariable Integer id, Model model){
         model.addAttribute("plate", plateService.getPlateById(id));
-        return "plateshow";
+        return "plate";
     }
 
     @RequestMapping("plate/edit/{id}")

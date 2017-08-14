@@ -4,7 +4,7 @@
 <head>
     <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
 
-    <title>Spring Framework</title>
+    <title>Plates</title>
 </head>
 
 <body>
@@ -18,8 +18,8 @@
                     <div class="card mb-r" style="margin-top: 52px">
                         <!--Card image-->
                         <div class="view overlay hm-white-slight plate my-auto mx-auto">
-                            <span class="plate-numbers" th:text="${plate.number}"></span>
-                            <span class="plate-letters" th:text="${plate.text}"></span>
+                            <span class="plate-numbers" th:text="${plate.numbers}"></span>
+                            <span class="plate-letters" th:text="${plate.letters}"></span>
                             <a>
                                 <div class="mask waves-effect waves-light"></div>
                             </a>
@@ -33,7 +33,7 @@
                             <h4 class="card-address" th:text="${plate.address}"></h4>
                             <!--Description-->
                             <p class="card-description" th:text="${plate.description}"></p>
-                            <a class="btn btn-unique waves-effect waves-light">Харах</a>
+                            <a class="btn btn-unique waves-effect waves-light" th:href="${ '/plate/' + plate.id}">Харах</a>
                         </div>
                         <!--/.Card content-->
                     </div>

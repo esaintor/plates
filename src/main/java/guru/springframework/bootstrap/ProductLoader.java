@@ -52,8 +52,8 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
 
         // for(int i=0;i<10;i++){
         //     Plate one = new Plate();
-        // one.setNumber(1234);
-        // one.setText("УБУ");
+        // one.setNumbers(1234);
+        // one.setLetters("УБУ");
         // one.setDate(new Date());
         // one.setAddress("Улаанбаатар, ХУ дүүрэг");
         // one.setDescription("Жолооч зөрчил гаргасан");
@@ -61,8 +61,8 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
         // }
 
         Plate two = new Plate();
-        two.setNumber(2345);
-        two.setText("УБА");
+        two.setNumbers(2345);
+        two.setLetters("УБА");
         two.setDate(new Date());
         two.setAddress("Улаанбаатар, ХУ дүүрэг");
         two.setDescription("Жолооч зөрчил гаргасан");

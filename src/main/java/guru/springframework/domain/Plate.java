@@ -12,8 +12,8 @@ public class Plate {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private Integer number;
-    private String text;
+    private Integer numbers;
+    private String letters;
     private Date date;
     // private Type type;
     // private Conflict conflict;

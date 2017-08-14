@@ -9056,11 +9056,6 @@ footer.page-footer {
     padding-top: 20px;
     background-color: #4285F4;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1080;
 }
 
 footer.page-footer .container-fluid {
