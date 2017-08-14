@@ -26,15 +26,15 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
 
-        // for(int i=0;i<10;i++){
-        //     Plate one = new Plate();
-        // one.setNumbers(1234);
-        // one.setLetters("УБУ");
-        // one.setDate(new Date());
-        // one.setAddress("Улаанбаатар, ХУ дүүрэг");
-        // one.setDescription("Жолооч зөрчил гаргасан");
-        // plateRepository.save(one);
-        // }
+        for(int i=0;i<10;i++){
+            Plate one = new Plate();
+        one.setNumbers(1234);
+        one.setLetters("УБУ");
+        one.setDate(new Date());
+        one.setAddress("Улаанбаатар, ХУ дүүрэг");
+        one.setDescription("Жолооч зөрчил гаргасан");
+        plateRepository.save(one);
+        }
 
         Plate two = new Plate();
         two.setNumbers(2345);
@@ -43,7 +43,5 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
         two.setAddress("Улаанбаатар, ХУ дүүрэг");
         two.setDescription("Жолооч зөрчил гаргасан");
         plateRepository.save(two);
-
-        log.info("Saved Mug - id:" + mug.getId());
     }
 }
